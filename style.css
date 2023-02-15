@@ -2,16 +2,26 @@
     --blue: #3aafab;
 }
 
+*{
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+    
+
 body{
     background-color: var(--blue);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 100px;
+    margin: 150px 500px;
 }
 
 .contenedor{
     width: 80%;
     max-width: 1200px;
-    margin: 0;
+
 }
 
 .contenedor{
