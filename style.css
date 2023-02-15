@@ -1,0 +1,66 @@
+:root{
+    --blue: #3aafab;
+}
+
+body{
+    background-color: var(--blue);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 100px;
+}
+
+.contenedor{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0;
+}
+
+.contenedor{
+    box-sizing: border-box;
+}
+
+.flex-externo,
+.flex-interno
+{
+list-style-type: none;
+padding: 0;
+}
+
+.flex-externo{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex-externo li,
+.flex-interno{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-interno{
+    padding: 0px;  
+    justify-content: space-between;
+}
+
+.flex-externo > li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.flex-externo li label,
+.flex-externo li p{
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.flex-externo > li > la label,
+.flex-externo li p{
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+
+.flex-externo > li > label + *,
+.flex-interno{
+    flex: 1 0 220px;
+}
